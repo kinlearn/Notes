@@ -1,4 +1,4 @@
-# Intro to Programming, Flow of PRogram, Intro to Java, First Java program
+# Intro to Programming, Flow of Program, Intro to Java, First Java program
 
 - Introduction to Programming - Types of Languages, Memory Management
 - Flow of Program - Flowcharts & Pseudocode

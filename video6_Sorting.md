@@ -193,7 +193,7 @@ function selectionSort(arr) {
 algo <br>
 
 1. Loop from `i=0` to (including) `n-2`
-2. In the inner loop, `j` will approach from the right to left. `j` will check if the ele[j] is less greater than ele at LHS and break when it sees a number that is greater than ele[j].
+2. In the inner loop, `j` will approach from the right to left. `j` will check if the `ele[j]` is less greater than ele at LHS and break when it sees a number that is greater than `ele[j]`.
 3. `j` should not exceed 0.
 
 ---

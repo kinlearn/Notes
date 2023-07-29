@@ -1,6 +1,8 @@
 # Bit Manipulation
 
 > ### **_IMP FORMULAS_**
+1. `n & 1` = LSB
+2. `
 
 ## Bitwise operators
 
@@ -252,11 +254,11 @@ def reset_ith_bit(n,i):
 
          e.g.
 
-    (-18) = 0 - 10
-    (-n) = 0 - n
+         (-18) = 0 - 10
+         (-n) = 0 - n
 
-    In binary,
-    00000000 - 00010010 = -18 ------[1]
+         In binary,
+         00000000 - 00010010 = -18 ------[1]
 
 3.  If 1 is added in front of those 0s that 1 will be ignored (as per point 1)
 
@@ -290,3 +292,24 @@ def reset_ith_bit(n,i):
       - 0 is a positive number
       - Thus Range = -128 to -1 + 0 + 127
       Therefore if n is the size of the datatype, general formula of range = 2^(n-1) to 2^(n-1) -1
+
+### Problems for concept clearing
+
+6.  Find the position of the right-most set bit.
+
+         e.g. Given  number 180 = (10110100)2, so here, rightmost set but is 3rd.
+
+         Approach: We need something like A | B
+         where A is all the bits of the left side of the rightmost set bit and B is all 0s.
+
+         The desired mask is something that 0es every bit from A and gives 1 at the end. Something like this:
+
+            10110100
+         &  01001100
+         -------------
+            00000100
+
+         How to get this mask?
+         This is (compliment of a)
+
+         n & (-n) gives us the rightmost set bit
